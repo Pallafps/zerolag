@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(\\(Get-Content \"C:\\\\Users\\\\Palla\\\\Desktop\\\\zerolag\\\\index.html\" | Measure-Object -Line\\).Lines)",
+      "PowerShell(Select-String *)",
+      "PowerShell($content = Get-Content \"C:\\\\Users\\\\Palla\\\\Desktop\\\\zerolag\\\\index.html\" -Raw -Encoding UTF8; $matches = [regex]::Matches\\($content, '.{50}49.{50}'\\); foreach \\($m in $matches\\) { Write-Host \"Match: $\\($m.Value\\)\" })",
+      "PowerShell(git *)"
+    ]
+  }
+}
